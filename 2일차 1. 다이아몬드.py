@@ -22,24 +22,24 @@ i, k = 0, 0
 while i < 9: #증가되는 모양
     if i<5: #별 증가처리
         #빈공백
-        k=0
+        k = 0
         while k<4-i: #4,3,2,1,0
             print(' ', end='') #print와 print를 연결해서 사용 end
-            k+=1
+            k += 1
         #별
-        k=0
-        while k<2*i+1: #1, 3, 5, 7, 9
+        k = 0
+        while k < 2 * i + 1: #1, 3, 5, 7, 9
             print('\u2605', end='')
-        k+=1
+            k += 1
     else:#별이 감소
-        k=0
+        k = 0
         while k<i-4: #1,2,3,4
             print(' ', end='')
-            k+=1
-        k=0
+            k += 1
+        k = 0
         while k<(8-i)*2+1: #7,5,3,1
             print('\u2605', end='')
-            k+=1
+            k +=1
 
     print() #아무것도 없으면 줄바꿈 처리를 위한 출력문
 
